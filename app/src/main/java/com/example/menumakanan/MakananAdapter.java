@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -38,6 +39,7 @@ public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.ViewHold
         holder.txtNama.setText(makanan.getNama());
         holder.txtHarga.setText(makanan.getHarga());
         holder.imgFoto.setImageResource(makanan.getId_gambar());
+        holder.ratingBar.setRating(makanan.getRating());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +50,7 @@ public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.ViewHold
                 it.putExtra("harga", makanan.getHarga());
                 it.putExtra("deskripsi", makanan.getDeskripsi());
                 it.putExtra("foto", makanan.getId_gambar());
+                it.putExtra("rating", makanan.getRating());
 
                 v.getContext().startActivity(it);
             }
@@ -64,6 +67,7 @@ public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.ViewHold
 
         public TextView txtNama, txtHarga;
         public ImageView imgFoto;
+        public RatingBar ratingBar;
         public ConstraintLayout itemView;
 
         public ViewHolder(@NonNull View itemView) {
@@ -72,6 +76,7 @@ public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.ViewHold
             txtNama = (TextView) itemView.findViewById(R.id.txtNama);
             txtHarga = (TextView) itemView.findViewById(R.id.txtHarga);
             imgFoto = (ImageView) itemView.findViewById(R.id.imgFoto);
+            ratingBar = itemView.findViewById(R.id.ratingBar2);
 
             this.itemView = (ConstraintLayout) itemView.findViewById(R.id.MainLayout);
         }

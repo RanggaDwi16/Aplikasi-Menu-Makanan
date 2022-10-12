@@ -5,4 +5,8 @@
     <string name="rating">Rating</string>
     <string name="todo">TODO</string>
     <string name="menu_makanan_gacoan">Menu Makanan Gacoan</string>
+    <string name="namamakanan">TextView</string>
+    <string name="harga">TextView</string>
+    <string name="deskripsi">TextView</string>
+    <string name="detail_menu_gacoan">Detail Menu Gacoan</string>
 </resources>
