@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
-        android:text="Menu Makanan Gacoan"
+        android:text="@string/menu_makanan_gacoan"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Menu Makanan</string>
+    <string name="rp_10_000">Rp 10.000</string>
+    <string name="mie_angel">Mie Angel</string>
+    <string name="rating">Rating</string>
+    <string name="todo">TODO</string>
+    <string name="menu_makanan_gacoan">Menu Makanan Gacoan</string>
 </resources>

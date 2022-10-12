@@ -17,7 +17,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/todo" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imgFoto"
@@ -36,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:text="Mie Angel"
+        android:text="@string/mie_angel"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imgFoto"
@@ -49,7 +50,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:textColor="@color/black"
-        android:text="Rp 10.000"
+        android:text="@string/rp_10_000"
         app:layout_constraintStart_toEndOf="@+id/imgFoto"
         app:layout_constraintTop_toBottomOf="@+id/txtNama" />
 
@@ -69,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="Rating"
+        android:text="@string/rating"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/ratingBar2"
         app:layout_constraintStart_toEndOf="@+id/ratingBar2"
